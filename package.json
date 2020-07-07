@@ -1,0 +1,19 @@
+{
+  "name": "sidekick-controller-examplenode",
+  "version": "1.0.0",
+  "description": "Example Node Controller",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/pkg index.js -t node12-darwin-x64,node12-windows-x64 --output build/controller",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "pkg": "latest"
+  },
+  "dependencies": {
+    "ldk": "git+https://bitbucket.org/crosschx/loop-development-kit-node.git"
+  }
+}
