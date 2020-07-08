@@ -7,7 +7,8 @@
     "example": "examples"
   },
   "scripts": {
-    "build": "./node_modules/.bin/pkg index.js -t node12-darwin-x64,node12-windows-x64 --output build/controller",
+    "build": "./node_modules/.bin/pkg index.js -t node12-darwin-x64,node12-windows-x64 --output build/controller && cp plugin.json build/plugin.json",
+    "deploy": "npm run build && mkdir -p \"$HOME/Library/Application Support/SideKick/plugins/controllers/$npm_package_name\" && cp build/controller-macos \"$HOME/Library/Application Support/SideKick/plugins/controllers/$npm_package_name/plugin\" && cp build/plugin.json \"${HOME}/Library/Application Support/SideKick/plugins/controllers/$npm_package_name/plugin.json\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
