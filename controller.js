@@ -28,9 +28,13 @@ class Controller {
   onEvent(event) {
     if (event.data.text) {
       this.host.emitWhisper({
-        icon: 'announcement',
-        label: 'Javascript Controller',
-        markdown: `# FROM JAVASCRIPT\n\n${event.data.text}`,
+        icon: 'bathtub',
+        label: 'Example Controller Node',
+        markdown: `# New Text Event
+\`\`\`
+${event.data.text}
+\`\`\`
+`,
         style: this.style,
       });
     }
