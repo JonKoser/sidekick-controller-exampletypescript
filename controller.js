@@ -4,9 +4,9 @@ class Controller {
       foo: 'bar',
     };
     this.style = {
-      backgroundColor: '#333',
+      backgroundColor: '#fff',
       highlightColor: '#651fff',
-      primaryColor: '#eee',
+      primaryColor: '#666',
     };
   }
 
@@ -32,7 +32,7 @@ class Controller {
         label: 'Example Controller Node',
         markdown: `# New Text Event
 \`\`\`
-${event.data.text}
+${event.data.text.trim()}
 \`\`\`
 `,
         style: this.style,
