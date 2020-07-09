@@ -15,6 +15,6 @@
     "pkg": "latest"
   },
   "dependencies": {
-    "ldk": "git+https://bitbucket.org/crosschx/loop-development-kit-node.git"
+    "ldk": "git+https://github.com/open-olive/loop-development-kit-node.git"
   }
 }
