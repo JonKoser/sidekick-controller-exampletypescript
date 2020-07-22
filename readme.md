@@ -1,15 +1,16 @@
 # Sidekick Controller Example Node
 
-The is a very simple controller to use as a starting point. This controller watches for text events and emits a whisper every time it receives an event.
+This is a very simple controller to use as a starting point. This controller watches for text events and emits a whisper every time it receives an event.
 
 ## Developers
 
 ### Install
 
-Ensure NodeJS is installed and working ([Instructions](https://nodejs.org/en/download/package-manager/)).  Node v10 or higher is reccomended.
+Ensure NodeJS is installed and working ([Instructions](https://nodejs.org/en/download/package-manager/)). Node v10 or higher is recommended.
 
 To install dependencies, run the following command:
-```
+
+```shell
 npm i
 ```
 
@@ -18,7 +19,8 @@ npm i
 Build will compile an executable and output it to the `/build` directory.
 
 Run the following command to build:
-```
+
+```shell
 npm run build
 ```
 
@@ -29,6 +31,7 @@ Deploying will first build, then copy the built files to the correct location fo
 This is useful for testing with Sidekick.
 
 Run the following command to deploy:
-```
+
+```shell
 npm run deploy
 ```
