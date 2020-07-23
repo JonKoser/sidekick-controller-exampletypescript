@@ -26,12 +26,16 @@ class Controller {
       return
     }
 
+    // read and update counter
     let counter = JSON.parse(await this.host.storageRead("counter"));
-    
-    // increment counter
+    if (!Number.isInteger(counter)) {
+      console.error("invalid value for counter, resetting")
+      counter = 0;
+    }
     counter += 1;
     await this.host.storageWrite("counter", JSON.stringify(counter));
 
+    // send whisper to sidekick
     this.host.emitWhisper({
       icon: 'bathtub',
       label: 'Example Controller Node',
