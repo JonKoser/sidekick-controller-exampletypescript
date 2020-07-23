@@ -1,5 +1,19 @@
 {
+  "author": "Olive",
+  "created": "2020-06-22T00:00:00Z",
+  "dependencies": [],
+  "description": "This is an example controller written in Node.",
+  "icon": "bathtub",
   "id": "3510a236-c9fe-439a-b7fb-830a3d683e93",
+  "name": "Example Node",
+  "organization": "OliveAI",
   "specification": "1",
-  "version": "0.0.1"
+  "updated": "2020-07-23T00:00:00Z",
+  "version": "1.1.0",
+  "storage": {
+    "counter": {
+      "name": "Counter",
+      "description": "A useless counter to demonstrate writing to storage"
+    }
+  }
 }
