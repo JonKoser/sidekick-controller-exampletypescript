@@ -12,9 +12,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "eslint": "latest",
     "pkg": "latest"
   },
   "dependencies": {
-    "ldk": "git+https://github.com/open-olive/loop-development-kit-node.git"
+    "ldk": "git+https://github.com/open-olive/loop-development-kit-node.git#SIDE-376-add-config-storage"
   }
 }
