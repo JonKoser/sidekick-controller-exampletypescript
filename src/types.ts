@@ -26,6 +26,9 @@ export interface configIfc {
 }
 
 export interface ControllerIfc {
+    configSettings: configIfc,
+    style: styleIfc,
+    host: hostIfc,
     start(host: hostIfc): void,
     stop(): void,
     config(): configIfc,
