@@ -24,3 +24,11 @@ export interface eventIfc {
 export interface configIfc {
     foo: string
 }
+
+export interface ControllerIfc {
+    start(host: hostIfc): void,
+    stop(): void,
+    config(): configIfc,
+    setConfig(config: configIfc): void,
+    onEvent(event: eventIfc): void,
+}

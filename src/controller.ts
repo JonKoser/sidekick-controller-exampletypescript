@@ -1,6 +1,6 @@
-import { hostIfc, styleIfc, eventIfc, configIfc } from './types';
+import { hostIfc, styleIfc, eventIfc, configIfc, ControllerIfc } from './types';
 
-export class Controller {
+export class Controller implements ControllerIfc {
   configSettings: configIfc;
   style: styleIfc;
   host: hostIfc
