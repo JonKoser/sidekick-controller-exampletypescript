@@ -1,5 +1,5 @@
 {
-  "name": "sidekick-controller-examplenode",
+  "name": "sidekick-controller-exampletypescript",
   "version": "1.0.0",
   "description": "Example Node Controller",
   "main": "dist/index.js",
