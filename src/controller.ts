@@ -1,6 +1,12 @@
-class Controller {
+import { hostIfc, styleIfc, eventIfc, configIfc } from './types';
+
+export class Controller {
+  configSettings: configIfc;
+  style: styleIfc;
+  host: hostIfc
+
   constructor() {
-    this.config = {
+    this.configSettings = {
       foo: 'bar',
     };
     this.style = {
@@ -10,22 +16,22 @@ class Controller {
     };
   }
 
-  start(host) {
+  start(host: hostIfc): void {
     this.host = host;
   }
 
-  stop() {
+  stop(): void {
   }
 
   config() {
-    return this.config;
+    return this.configSettings;
   }
 
-  setConfig(config) {
-    this.config = config;
+  setConfig(config: configIfc): void {
+    this.configSettings = config;
   }
 
-  onEvent(event) {
+  onEvent(event: eventIfc): void {
     if (event.data.text) {
       this.host.emitWhisper({
         icon: 'bathtub',
@@ -40,5 +46,3 @@ ${event.data.text.trim()}
     }
   }
 }
-
-module.exports = Controller;
